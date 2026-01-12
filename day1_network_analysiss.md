@@ -1,0 +1,76 @@
+In your browser DevTools Network tab, trigger a request to any website (e.g., your own site or google.com) and inspect:
+	URL
+	Method
+	Request headers
+	Response headers
+	Body (if any)
+
+	Write a short explanation (5–8 lines) describing what happened from request → response.
+	
+Answer:
+
+	When we send a request, in this case i have inspected the POST Request on geeksforgeeks website.
+	
+	1. When my browser sent a request to gfg server i got to know about these metrics 
+		i) 11 / 87 requests -> 87 requests → Total number of network requests the page needs
+				    -> 11 requests → Requests that are currently shown in the Network tab
+				    
+		ii) 7.2 kB / 452 kB transferred -> means 7.2kB of data is transferred for currently visible requests
+		
+		iii) Load: 1.5 sec -> means browser took 1.5 seconds to send request, receive and loading the page.
+		
+		
+		![Network tab](images/network_tab_with_some_metrics.png)
+		
+		
+		
+		
+	2. URl and Method -> https://utilapi.geeksforgeeks.org/api/user/profile/ 
+		This is a url used for Post request, when i used postman to sent Post request i got the same response as the browser. Here i copied some key value pair from request header and body field from payload and used them to send the Post request.
+		
+ 		![gfg url response](images/gfg_api_response.png)
+ 		![gfg postman post response](images/postman_gfg_api_response_post_request.png)
+ 		
+ 		
+ 		
+ 		
+	
+	3. Request headers 	-> Request headers contains key-value pair which provide additional context about the request.
+				-> Contains URL, method Get or Post
+				-> Contains Cookie, using cookie value it is possible to send the post request using Postman and get same response.
+				-> Content-Type : application/json, indicates that the request body is in JSON format
+				-> Accept: */*, type of response the browser can handle.
+				-> User-Agent, tell about the browser and operating system making the request
+				-> Origin: https://www.geeksforgeeks.org, From where the request was initiated.
+				
+				![gfg Request headers](images/3rd_point.png)
+				
+				
+				
+				
+			
+				
+	4. Response headers 	-> Status Code, request status.
+				-> Content-Type: application/json, shows that the response data was returned in JSON format.
+				-> content-length: 873, size of the response sent by the server.
+				-> date Mon, 12 Jan 2026 17:30:30 GMT, server ka time.
+				-> Server: nginx, tell about the web server handling the request.
+				
+				![gfg Response headers](images/4th_point.png)
+				
+				
+				
+				
+				
+	5. Request Body 	-> {"domain": "gfg"}, It is the request body sent in a POST request.
+	
+	
+	        ![gfg Request Body](images/5th_point.png)
+		
+
+
+
+
+				
+				
+			
