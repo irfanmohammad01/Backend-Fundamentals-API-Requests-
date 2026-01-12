@@ -1,9 +1,9 @@
 In your browser DevTools Network tab, trigger a request to any website (e.g., your own site or google.com) and inspect:
-	URL
-	Method
-	Request headers
-	Response headers
-	Body (if any)
+	- URL
+	- Method
+	- Request headers
+	- Response headers
+	- Body (if any)
 
 	Write a short explanation (5–8 lines) describing what happened from request → response.
 	
@@ -20,7 +20,7 @@ Answer:
 		iii) Load: 1.5 sec -> means browser took 1.5 seconds to send request, receive and loading the page.
 		
 		
-		![Network tab](images/network_tab_with_some_metrics.png)
+		![Network tab](../images/network_tab_with_some_metrics.png)
 		
 		
 		
@@ -28,8 +28,8 @@ Answer:
 	2. URl and Method -> https://utilapi.geeksforgeeks.org/api/user/profile/ 
 		This is a url used for Post request, when i used postman to sent Post request i got the same response as the browser. Here i copied some key value pair from request header and body field from payload and used them to send the Post request.
 		
- 		![gfg url response](images/gfg_api_response.png)
- 		![gfg postman post response](images/postman_gfg_api_response_post_request.png)
+ 		![gfg url response](../images/gfg_api_response.png)
+ 		![gfg postman post response](../images/postman_gfg_api_response_post_request.png)
  		
  		
  		
@@ -43,7 +43,7 @@ Answer:
 				-> User-Agent, tell about the browser and operating system making the request
 				-> Origin: https://www.geeksforgeeks.org, From where the request was initiated.
 				
-				![gfg Request headers](images/3rd_point.png)
+				![gfg Request headers](../images/3rd_point.png)
 				
 				
 				
@@ -56,7 +56,7 @@ Answer:
 				-> date Mon, 12 Jan 2026 17:30:30 GMT, server ka time.
 				-> Server: nginx, tell about the web server handling the request.
 				
-				![gfg Response headers](images/4th_point.png)
+				![gfg Response headers](../images/4th_point.png)
 				
 				
 				
@@ -65,7 +65,7 @@ Answer:
 	5. Request Body 	-> {"domain": "gfg"}, It is the request body sent in a POST request.
 	
 	
-	        ![gfg Request Body](images/5th_point.png)
+	        ![gfg Request Body](../images/5th_point.png)
 		
 
 
