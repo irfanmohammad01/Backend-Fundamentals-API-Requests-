@@ -1,0 +1,31 @@
+Submit the GIT repo link as a submission on Openverse
+
+Build & Inspect API Requests
+
+   1.  Install and open Postman (or use an alternative like Hoppscotch).
+
+   2.  Make a GET request to a public API 
+
+(e.g., https://jsonplaceholder.typicode.com/posts/1).
+
+   3 .Make a POST request to https://jsonplaceholder.typicode.com/posts with a JSON body:
+
+    {
+
+   "title": "My First API Post",
+
+   "body": "Learning APIs is fun!",
+
+   "userId": 101
+
+    }
+
+    4. In your browser DevTools Network tab, trigger a request to any website (e.g., your own site or google.com) and inspect:
+
+        URL
+        Method
+        Request headers
+        Response headers
+        Body (if any)
+
+    5. Write a short explanation (5–8 lines) describing what happened from request → response.
